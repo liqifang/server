@@ -7,9 +7,9 @@ class MySever(socketserver.BaseRequestHandler):
         # 1.记录客户端socket
         conn = self.request
         # 2.向客户端发送数据
-        conn.sendall(bytes("你好，我是机器人", encoding="utf-8"))
-        # 3.多进程连接服务器
-        while True:
+        conn.sendall(bytes("你好，请问有什么可以帮你的", encoding="utf-8"))
+        # 3.多进程连接服务
+        while True
             # 4.接收客户端请求信息
             ret_bytes = conn.recv(1024)
             # 5.将请求发信息转换为字符串
